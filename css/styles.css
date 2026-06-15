@@ -465,12 +465,10 @@ body.nav-open .site-header {
 
 .lead-form {
   position: relative;
-  background: rgba(20, 12, 36, 0.50);
+  background: rgba(20, 12, 36, 0.5); /* Opacidade de 50% (mobile e desktop) */
   border: 1px solid rgba(197, 102, 204, 0.16);
   border-radius: var(--radius-card);
   padding: clamp(28px, 3vw, 40px);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
   box-shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
   transform-style: preserve-3d;
   will-change: transform;
