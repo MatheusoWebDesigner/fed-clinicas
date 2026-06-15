@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FED Marketing para Clínicas | Especialistas em Marketing para Clínicas</title>
+  <meta name="description" content="A FED estrutura o tráfego e o funil da sua clínica pra atrair o paciente certo, do clique à cadeira. Estética, odontologia e depilação: marketing feito por quem já opera o setor.">
+  <link rel="canonical" href="https://fedmarketingclinicas.com.br/">
+  <link rel="icon" type="image/png" href="assets/favicon-fed.png">
+  <link rel="apple-touch-icon" href="assets/favicon-fed.png">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="FED Marketing para Clínicas | Especialistas em Marketing para Clínicas">
+  <meta property="og:description" content="A sua clínica merece ser a referência da região. Não só mais um anúncio no feed.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://fedmarketingclinicas.com.br/">
+
+  <!-- Fonts: Anton (manifesto) · Poppins (corpo) · Space Mono (eyebrows) · Georgia (system serif) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!--
+    TODO antes do lançamento (especificação técnica do briefing):
+    · Pixel do Meta
+    · Tag do Google Ads
+    · Eventos de conversão no formulário e no clique do WhatsApp (UTM)
+  -->
+</head>
+<body data-theme="dark">
+
+  <!-- Fundo estático fixo (nebulosa FED) — desktop e mobile via CSS -->
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Barra de progresso de leitura -->
+  <div class="progress-bar" aria-hidden="true"><span id="progress-fill"></span></div>
+
+  <!-- ============================================================
+       SEÇÃO 1 · HEADER
+  ============================================================= -->
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a href="#hero" class="brand" aria-label="FED Marketing">
+        <img src="assets/logo-fed-oficial.png" alt="FED Marketing" class="brand-logo">
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
+        <button class="nav-close" id="nav-close" type="button" aria-label="Fechar menu">
+          <span></span><span></span>
+        </button>
+        <a href="#metodo">Método</a>
+        <a href="#solucoes">Soluções</a>
+        <a href="#segmentos">Segmentos</a>
+        <a href="#mercado">Mercado</a>
+        <a href="#faq">FAQ</a>
+        <a href="#hero-form" class="btn btn-primary nav-cta">Quero meu diagnóstico</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#hero-form" class="btn btn-primary btn-sm" data-magnetic>Quero meu diagnóstico</a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Conteúdo rolável (ScrollSmoother) -->
+  <div id="smooth-wrapper">
+  <div id="smooth-content">
+
+  <!-- ============================================================
+       SEÇÃO 2 · HERO + FORMULÁRIO
+  ============================================================= -->
+  <section class="hero section-dark" id="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow" data-reveal>Especialistas em marketing para clínicas</p>
+
+        <h1 class="hero-headline" id="hero-headline">
+          A sua clínica merece ser a <span class="grad">referência da região</span>. Não só mais um anúncio no feed.
+        </h1>
+
+        <p class="hero-sub" data-reveal>
+          A FED estrutura o tráfego e o funil da sua clínica pra atrair o paciente certo, do clique à cadeira. Estética, odontologia e depilação: marketing feito por quem já opera o setor e entende as regras dele.
+        </p>
+
+        <p class="hero-cred" data-reveal>
+          <span class="cred-dot" aria-hidden="true"></span>
+          Experiência real com clínicas. Marketing dentro das normas dos conselhos. ROI acompanhado em tempo real.
+        </p>
+      </div>
+
+      <div class="hero-form-wrap" id="hero-form" data-lag="0.18">
+        <span class="form-border" aria-hidden="true"></span>
+        <form class="lead-form" id="lead-form" novalidate>
+          <span class="form-glow" aria-hidden="true"></span>
+          <p class="form-title">Diagnóstico gratuito</p>
+          <p class="form-sub">Sem compromisso. Resposta em até 2 horas.</p>
+
+          <div class="field">
+            <label for="f-nome">Nome</label>
+            <input type="text" id="f-nome" name="nome" autocomplete="name" required placeholder="Seu nome">
+          </div>
+          <div class="field">
+            <label for="f-whats">WhatsApp</label>
+            <input type="tel" id="f-whats" name="whatsapp" autocomplete="tel" inputmode="tel" required placeholder="(11) 9 0000-0000">
+          </div>
+          <div class="field">
+            <label for="f-clinica">Nome da clínica</label>
+            <input type="text" id="f-clinica" name="clinica" autocomplete="organization" required placeholder="Nome da sua clínica">
+          </div>
+          <div class="field">
+            <label for="f-segmento">Segmento</label>
+            <select id="f-segmento" name="segmento" required>
+              <option value="" disabled selected>Selecione o segmento</option>
+              <option value="estetica">Estética</option>
+              <option value="odontologia">Odontologia</option>
+              <option value="depilacao">Depilação</option>
+              <option value="outro">Outro</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">Quero meu diagnóstico gratuito</button>
+          <a class="whats-link" href="https://wa.me/5511989985696?utm_source=landing&utm_medium=cta&utm_campaign=clinicas" target="_blank" rel="noopener">Prefiro falar no WhatsApp</a>
+        </form>
+      </div>
+    </div>
+
+    <div class="scroll-hint" aria-hidden="true">
+      <span class="scroll-hint-line"></span>
+      <span class="scroll-hint-label">role</span>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SEÇÃO 3 · FAIXA DE AUTORIDADE IMEDIATA
+  ============================================================= -->
+  <section class="authority section-dark" id="autoridade">
+    <div class="container">
+      <ul class="authority-strip" data-stagger>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+          Experiência real com clínicas de estética e odontologia
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"/></svg>
+          Marketing dentro das normas do CFM, CRO e CFF
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="3"/><path d="M9 18h6"/></svg>
+          App proprietário com ROI em tempo real
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 3l2.5 5 5.5.8-4 3.9.9 5.5-4.9-2.6-4.9 2.6.9-5.5-4-3.9 5.5-.8L12 3z"/></svg>
+          Liderança sócia: quem cuida da sua clínica é dono da FED
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SEÇÃO 4 · AGITAÇÃO DO PROBLEMA
+  ============================================================= -->
+  <section class="problem section-light" id="problema">
+    <div class="container">
+      <header class="section-head">
+        <p class="eyebrow" data-reveal><span class="idx">01</span> Você reconhece isso?</p>
+        <h2 class="section-title" data-split>O Marketing que Drena o Caixa da Sua Clínica</h2>
+        <p class="section-sub" data-reveal>
+          Três erros que quase toda clínica comete. Quem entende isso para de perder dinheiro. Quem não entende, continua alimentando agência que não entrega.
+        </p>
+      </header>
+
+      <div class="problem-list">
+        <article class="problem-row">
+          <span class="row-line" aria-hidden="true"></span>
+          <span class="row-idx" aria-hidden="true">01</span>
+          <h3 class="row-title">Anúncio sem público certo</h3>
+          <p class="row-text">Impulsionar post atrai curioso, não paciente. Sem segmentação por região, procedimento e perfil, você paga pra aparecer pra quem nunca vai marcar. Verba alta, agenda vazia.</p>
+        </article>
+
+        <article class="problem-row">
+          <span class="row-line" aria-hidden="true"></span>
+          <span class="row-idx" aria-hidden="true">02</span>
+          <h3 class="row-title">Lead que chega e esfria</h3>
+          <p class="row-text">A pessoa preenche, manda mensagem, e ninguém responde rápido. Em clínica, lead frio é dinheiro perdido. Quem quer um procedimento e não é atendido na hora, marca no concorrente. Falta funil e resposta ágil.</p>
+        </article>
+
+        <article class="problem-row">
+          <span class="row-line" aria-hidden="true"></span>
+          <span class="row-idx" aria-hidden="true">03</span>
+          <h3 class="row-title">Marketing fora das regras</h3>
+          <p class="row-text">CFM, CRO e CFF têm normas rígidas sobre propaganda na saúde. Anúncio com promessa proibida ou antes e depois irregular gera advertência. A maioria das agências não conhece essas regras e expõe a sua clínica ao risco.</p>
+        </article>
+
+        <span class="problem-end-line" aria-hidden="true"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SEÇÃO 5 · O TAMANHO DA OPORTUNIDADE
+  ============================================================= -->
+  <section class="market section-light" id="mercado">
+    <div class="container">
+      <header class="section-head">
+        <p class="eyebrow" data-reveal><span class="idx">02</span> O mercado em números</p>
+        <h2 class="section-title" data-split>O Setor Está Crescendo. A Pergunta é Quem Vai Capturar.</h2>
+        <p class="section-sub" data-reveal>
+          Os números mostram um mercado em plena expansão. Quem tem método pega essa onda. Quem depende do boca a boca, assiste o concorrente crescer.
+        </p>
+      </header>
+
+      <div class="market-grid" id="segmentos" data-stagger>
+        <article class="card market-card">
+          <p class="market-tag">Estética</p>
+          <p class="market-stat"><span class="counter grad" data-count="16.5" data-decimals="1" data-suffix="%">0%</span></p>
+          <p class="market-statlabel">crescimento em faturamento das franquias de saúde, beleza e bem-estar</p>
+          <p>Franquias de saúde, beleza e bem-estar cresceram 16,5% em faturamento. O Brasil é o 3º maior mercado de estética do mundo, com projeção de US$ 41,6 bilhões até 2028.</p>
+          <p class="market-src">Fontes: ABF, Mordor Intelligence.</p>
+        </article>
+
+        <article class="card market-card">
+          <p class="market-tag">Odontologia</p>
+          <p class="market-stat"><span class="counter grad" data-count="13" data-suffix="%">0%</span><span class="market-statunit">ao ano</span></p>
+          <p class="market-statlabel">projeção de crescimento do mercado até 2030</p>
+          <p>O mercado deve crescer 13% ao ano até 2030. Os planos odontológicos somam cerca de 32 milhões de beneficiários, alta de 6,8% em um ano. E 68% dos brasileiros foram ao dentista no último ano, a maioria no setor privado.</p>
+          <p class="market-src">Fontes: Research And Markets, ANS, CFO.</p>
+        </article>
+
+        <article class="card market-card">
+          <p class="market-tag">Depilação e Beleza</p>
+          <p class="market-stat"><span class="grad market-stat-word">Top mundial</span></p>
+          <p class="market-statlabel">o Brasil entre os maiores mercados de beleza do mundo</p>
+          <p>Puxado pela valorização da imagem e pelas redes sociais, o Brasil é um dos maiores mercados de beleza do mundo. Recorrência e fidelização são o motor do faturamento.</p>
+          <p class="market-src">Fonte: ABIHPEC.</p>
+        </article>
+      </div>
+
+      <p class="market-close" data-reveal>
+        A FED entra exatamente aqui: com método pra capturar esse mercado em alta e tecnologia pra você ver cada real virar paciente.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SEÇÃO 6 · O MÉTODO FED
+  ============================================================= -->
+  <section class="method section-light" id="metodo">
+    <div class="container">
+      <header class="section-head">
+        <p class="eyebrow" data-reveal><span class="idx">03</span> O método FED</p>
+        <h2 class="section-title" data-split>Tráfego Eficiente, do Clique à Cadeira</h2>
+        <p class="section-sub" data-reveal>
+          Não é impulsionar post. É um sistema que a gente já aplicou no setor, pensado pra cada etapa: atrair o paciente certo, converter interesse em consulta e fazer ele voltar.
+        </p>
+      </header>
+
+      <ol class="pillars" id="solucoes" data-stagger>
+        <li class="pillar">
+          <span class="pillar-num">1</span>
+          <div>
+            <h3>Atração com público certo</h3>
+            <p>Campanhas segmentadas por região, procedimento e perfil. Tráfego que traz quem quer o seu serviço, não curioso.</p>
+          </div>
+        </li>
+        <li class="pillar">
+          <span class="pillar-num">2</span>
+          <div>
+            <h3>Funil até a agenda</h3>
+            <p>Do anúncio à confirmação da consulta. Captura, resposta ágil e fluxo que não deixa o lead esfriar.</p>
+          </div>
+        </li>
+        <li class="pillar">
+          <span class="pillar-num">3</span>
+          <div>
+            <h3>Marketing dentro das normas</h3>
+            <p>Conteúdo e anúncios que respeitam CFM, CRO e CFF. Autoridade sem risco de advertência.</p>
+          </div>
+        </li>
+        <li class="pillar">
+          <span class="pillar-num">4</span>
+          <div>
+            <h3>ROI em tempo real</h3>
+            <p>Pelo nosso app, você acompanha quanto investiu, quantos leads chegaram e quanto virou consulta. A única agência onde a conta fica aberta.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SEÇÃO 7 · POR QUE A FED É A ESCOLHA CERTA
+  ============================================================= -->
+  <section class="compare section-light" id="porque-fed">
+    <div class="container">
+      <header class="section-head">
+        <p class="eyebrow" data-reveal><span class="idx">04</span> Por que a FED</p>
+        <h2 class="section-title" data-split>O Que Separa a FED de uma Agência Comum</h2>
+      </header>
+
+      <div class="compare-table" role="table" aria-label="Comparação entre agência comum e FED Marketing">
+        <div class="compare-row compare-head" role="row">
+          <div class="col-common" role="columnheader">Agência comum</div>
+          <div class="col-fed" role="columnheader">FED Marketing</div>
+        </div>
+
+        <div class="compare-row" role="row" data-compare>
+          <div class="col-common" role="cell"><span class="mark mark-x" aria-hidden="true">✕</span> Impulsiona post e chama de tráfego</div>
+          <div class="col-fed" role="cell"><span class="mark mark-v" aria-hidden="true">✓</span> Gestão de tráfego com funil até a agenda</div>
+        </div>
+        <div class="compare-row" role="row" data-compare>
+          <div class="col-common" role="cell"><span class="mark mark-x" aria-hidden="true">✕</span> Não conhece as regras dos conselhos</div>
+          <div class="col-fed" role="cell"><span class="mark mark-v" aria-hidden="true">✓</span> Marketing dentro das normas do setor</div>
+        </div>
+        <div class="compare-row" role="row" data-compare>
+          <div class="col-common" role="cell"><span class="mark mark-x" aria-hidden="true">✕</span> Sócio fecha e some, júnior executa</div>
+          <div class="col-fed" role="cell"><span class="mark mark-v" aria-hidden="true">✓</span> Quem cuida da sua clínica é sócio da FED</div>
+        </div>
+        <div class="compare-row" role="row" data-compare>
+          <div class="col-common" role="cell"><span class="mark mark-x" aria-hidden="true">✕</span> Relatório confuso no fim do mês</div>
+          <div class="col-fed" role="cell"><span class="mark mark-v" aria-hidden="true">✓</span> ROI aberto em tempo real, pelo app</div>
+        </div>
+        <div class="compare-row" role="row" data-compare>
+          <div class="col-common" role="cell"><span class="mark mark-x" aria-hidden="true">✕</span> Mesma receita pra todo cliente</div>
+          <div class="col-fed" role="cell"><span class="mark mark-v" aria-hidden="true">✓</span> Método já aplicado em clínicas do setor</div>
+        </div>
+      </div>
+
+      <p class="compare-close" data-reveal>
+        A diferença não é só preço. É método, especialização e transparência. É por isso que clínica séria escolhe FED.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SEÇÃO 8 · LIDERANÇA SÓCIA
+  ============================================================= -->
+  <section class="leadership section-light" id="lideranca">
+    <div class="container leadership-grid">
+      <div>
+        <p class="eyebrow" data-reveal><span class="idx">05</span> Quem vai cuidar da sua clínica</p>
+        <h2 class="section-title" data-split>Quem Lidera o Seu Tráfego é Dono da FED</h2>
+      </div>
+      <div class="leadership-copy" data-reveal>
+        <p>
+          Na maioria das agências, o sócio fecha o contrato e some. Quem executa é quem sobrou na semana. Na FED é o contrário. O Líder de Tráfego, o de Mídias e o de Desenvolvimento são sócios da empresa, e respondem pelo padrão técnico do seu projeto. Quando quem cuida da sua clínica também é dono do resultado, o cuidado é outro.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SEÇÃO 9 · FAQ
+  ============================================================= -->
+  <section class="faq section-light" id="faq">
+    <div class="container faq-grid">
+      <header class="section-head faq-head">
+        <p class="eyebrow" data-reveal><span class="idx">06</span> Perguntas frequentes</p>
+        <h2 class="section-title" data-split>O que todo dono de clínica pergunta antes de fechar</h2>
+      </header>
+
+      <div class="faq-list" data-stagger>
+        <details class="faq-item">
+          <summary>Vocês entendem as regras de publicidade do meu conselho (CFM/CRO/CFF)?<span class="faq-plus" aria-hidden="true"></span></summary>
+          <div class="faq-answer"><p>Sim. Marketing de saúde tem normas específicas e a gente trabalha dentro delas. Autoridade e resultado sem expor a sua clínica a advertência.</p></div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Vocês já trabalharam com clínicas como a minha?<span class="faq-plus" aria-hidden="true"></span></summary>
+          <div class="faq-answer"><p>Sim, temos experiência real no setor de estética e odontologia. Conhecemos de perto os desafios de uma clínica porque já operamos esse tipo de marketing.</p></div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Funciona pra clínica pequena ou só pra rede?<span class="faq-plus" aria-hidden="true"></span></summary>
+          <div class="faq-answer"><p>Funciona pros dois. O método se adapta ao tamanho e ao estágio da sua clínica.</p></div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Já tentei tráfego e não funcionou. Por que com vocês seria diferente?<span class="faq-plus" aria-hidden="true"></span></summary>
+          <div class="faq-answer"><p>Porque impulsionar post não é gestão de tráfego. A diferença é método: público certo, funil até a agenda e acompanhamento de cada real. Provavelmente faltou estrutura, não verba.</p></div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Quanto preciso investir?<span class="faq-plus" aria-hidden="true"></span></summary>
+          <div class="faq-answer"><p>Depende do objetivo e do estágio da clínica. No diagnóstico gratuito a gente analisa o seu cenário e monta um plano sob medida.</p></div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Em quanto tempo vejo resultado?<span class="faq-plus" aria-hidden="true"></span></summary>
+          <div class="faq-answer"><p>Não prometemos número mágico, e desconfie de quem promete. O que garantimos é método e transparência: você acompanha tudo em tempo real pelo nosso app.</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SEÇÃO 10 · CTA FINAL
+  ============================================================= -->
+  <section class="cta section-light" id="cta">
+    <div class="container cta-inner">
+      <p class="eyebrow eyebrow-light" data-reveal>Diagnóstico gratuito</p>
+      <h2 class="cta-title" data-split>Pronto pra Tornar a Sua Clínica a Referência da Região?</h2>
+      <p class="cta-sub" data-reveal>
+        Em uma conversa, analisamos o marketing atual da sua clínica e mostramos onde estão as oportunidades de captar mais pacientes com método.
+      </p>
+
+      <ul class="cta-bullets" data-stagger>
+        <li>Análise do seu tráfego e captação atuais</li>
+        <li>Diagnóstico das oportunidades no seu segmento</li>
+        <li>Plano de ação com o método FED</li>
+        <li>Orientação sobre marketing dentro das normas do seu conselho</li>
+        <li>Sem compromisso, 100% gratuito</li>
+      </ul>
+
+      <div class="cta-actions" data-reveal>
+        <a href="#hero-form" class="btn btn-cream btn-lg" data-magnetic>Quero meu diagnóstico gratuito</a>
+        <a href="https://wa.me/5511989985696?utm_source=landing&utm_medium=cta_final&utm_campaign=clinicas" target="_blank" rel="noopener" class="btn btn-ghost btn-lg">Prefiro falar no WhatsApp</a>
+      </div>
+      <p class="cta-micro" data-reveal>Resposta em até 2 horas. Atendimento humano, sem robôs.</p>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SEÇÃO 11 · RODAPÉ
+  ============================================================= -->
+  <footer class="site-footer section-light">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="assets/favicon-fed.png" alt="FED Marketing" class="footer-logo">
+        <p class="footer-tagline">A única agência onde a conta fica aberta.</p>
+      </div>
+
+      <div class="footer-col">
+        <p class="footer-label">Contato</p>
+        <a href="https://wa.me/5511989985696" target="_blank" rel="noopener">(11) 9 8998-5696</a>
+        <a href="mailto:comercial@agenciafed.com.br">comercial@agenciafed.com.br</a>
+        <p>Av. Paulista, 777 · Jardins<br>São Paulo · SP</p>
+      </div>
+
+      <div class="footer-col">
+        <p class="footer-label">FED</p>
+        <a href="https://agenciafed.com.br/" target="_blank" rel="noopener">Site principal</a>
+        <a href="https://instagram.com/agencia_fed/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.youtube.com/@agencia_fed" target="_blank" rel="noopener">YouTube</a>
+        <a href="https://www.linkedin.com/company/agenciafed/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+
+      <div class="footer-col footer-sources">
+        <p class="footer-label">Fontes dos dados</p>
+        <p>BCG · ABF · Mordor Intelligence · ANS · Research And Markets · CFO · ABIHPEC</p>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© <span id="year">2026</span> FED Marketing. Todos os direitos reservados.</p>
+      <p class="footer-mono">fedmarketingclinicas.com.br</p>
+    </div>
+  </footer>
+
+  </div><!-- /#smooth-content -->
+  </div><!-- /#smooth-wrapper -->
+
+  <!-- GSAP (3.13+: ScrollSmoother liberado) -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js"></script>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
