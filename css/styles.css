@@ -199,6 +199,14 @@ section { padding: clamp(96px, 12vw, 168px) 0; }
   -webkit-text-fill-color: transparent;
   color: transparent;
 }
+/* palavra-chave do hero mais legível sobre o fundo escuro:
+   gradiente em magenta-soft (mais claro) + leve glow */
+.hero-headline .grad {
+  background: linear-gradient(96deg, var(--magenta-soft) 0%, #E89BE8 55%, var(--magenta-soft) 120%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  filter: drop-shadow(0 0 16px rgba(197, 102, 204, 0.5));
+}
 
 /* split de título (preenchido pelo JS) */
 .split-line { display: block; overflow: hidden; }
@@ -558,7 +566,16 @@ body.nav-open .site-header {
 
 .lead-form.is-sent .field,
 .lead-form.is-sent .btn,
-.lead-form.is-sent .whats-link { display: none; }
+.form-privacy {
+  text-align: center;
+  margin-top: 12px;
+  font-family: var(--f-mono);
+  font-size: 11px;
+  letter-spacing: 0.02em;
+  color: var(--t-muted);
+}
+.lead-form.is-sent .whats-link,
+.lead-form.is-sent .form-privacy { display: none; }
 .form-success {
   text-align: center;
   padding: 24px 8px;
@@ -751,6 +768,14 @@ body.nav-open .site-header {
   font-family: var(--f-mono);
   font-size: 11px;
   color: rgba(157, 154, 196, 0.65);
+}
+.market-examples {
+  font-family: var(--f-mono);
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  color: var(--t-muted);
+  margin-bottom: 28px;
+  max-width: 60ch;
 }
 .market-close {
   margin-top: clamp(56px, 6vw, 80px);
