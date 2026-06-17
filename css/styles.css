@@ -206,6 +206,7 @@ section { padding: clamp(96px, 12vw, 168px) 0; }
   -webkit-background-clip: text;
   background-clip: text;
   filter: drop-shadow(0 0 16px rgba(197, 102, 204, 0.5));
+  line-height: 1.3em;
 }
 
 /* split de título (preenchido pelo JS) */
